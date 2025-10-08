@@ -1,0 +1,80 @@
+.button {
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  min-width: 60px;
+  margin: 5px;
+  user-select: none;
+}
+
+.button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.number {
+  background-color: #505050;
+  color: white;
+}
+
+.number:hover {
+  background-color: #606060;
+}
+
+.operator {
+  background-color: #ff9500;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #ffad33;
+}
+
+.function {
+  background-color: #d4d4d2;
+  color: black;
+}
+
+.function:hover {
+  background-color: #e4e4e2;
+}
+
+.clear {
+  background-color: #d4d4d2;
+  color: black;
+}
+
+.clear:hover {
+  background-color: #e4e4e2;
+}
+
+.zero {
+  grid-column: span 2;
+  border-radius: 30px;
+  justify-content: flex-start;
+  padding-left: 25px;
+  min-width: 130px;
+}
+
+@media (max-width: 480px) {
+  .button {
+    min-height: 50px;
+    min-width: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .zero {
+    min-width: 110px;
+  }
+}
